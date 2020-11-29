@@ -99,17 +99,17 @@ namespace lab4
         public void selectRestourante(string foodType) {
             switch(foodType) {
                 case "a":
-                selectedRestourante = new FastFoodRestourante();
+                    selectedRestourante = new FastFoodRestourante();
                 return;
                 case "b":
-                selectedRestourante = new JapanRestourante();
+                    selectedRestourante = new JapanRestourante();
                 return;
                 case "c": 
-                selectedRestourante = new TraditionalRestourante();
+                    selectedRestourante = new TraditionalRestourante();
                 return;
                 default:
                     selectedRestourante = null;
-                break;
+                return;
                 
             }
         }
